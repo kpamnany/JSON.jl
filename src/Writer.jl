@@ -44,7 +44,7 @@ function lower(a)
     if nfields(a) > 0
         CompositeTypeWrapper(a)
     else
-        error("Cannot serialize type $(typeof(a))")
+        string(a)
     end
 end
 
